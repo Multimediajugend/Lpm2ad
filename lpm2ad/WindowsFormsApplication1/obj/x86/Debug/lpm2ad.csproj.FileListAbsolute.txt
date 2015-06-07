@@ -1,0 +1,9 @@
+D:\Temp\lpm2ad\lpm2ad\WindowsFormsApplication1\bin\Debug\lpm2ad.exe
+D:\Temp\lpm2ad\lpm2ad\WindowsFormsApplication1\bin\Debug\lpm2ad.pdb
+D:\Temp\lpm2ad\lpm2ad\WindowsFormsApplication1\bin\Debug\MySql.Data.dll
+D:\Temp\lpm2ad\lpm2ad\WindowsFormsApplication1\obj\x86\Debug\lpm2ad.csprojResolveAssemblyReference.cache
+D:\Temp\lpm2ad\lpm2ad\WindowsFormsApplication1\obj\x86\Debug\WindowsFormsApplication1.Form1.resources
+D:\Temp\lpm2ad\lpm2ad\WindowsFormsApplication1\obj\x86\Debug\lpm2ad.Properties.Resources.resources
+D:\Temp\lpm2ad\lpm2ad\WindowsFormsApplication1\obj\x86\Debug\lpm2ad.csproj.GenerateResource.Cache
+D:\Temp\lpm2ad\lpm2ad\WindowsFormsApplication1\obj\x86\Debug\lpm2ad.exe
+D:\Temp\lpm2ad\lpm2ad\WindowsFormsApplication1\obj\x86\Debug\lpm2ad.pdb

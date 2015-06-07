@@ -1,0 +1,160 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title></title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<script type="text/javascript">
+var x_5kk = true;
+var kerio = {lib:{}};
+</script>
+<script type="text/javascript" src="defaults.js?v=5136"></script>
+<script type="text/javascript" src="md5.js?v=1"></script>
+<!--generatedDefaults.js-->
+<script type="text/javascript">
+var x_32x = x_wi.x_wp
+? x_wi.x_wp + '/int/login/index.js?v=5136'
+: '/weblib/int/login/index.js?v=5136';
+document.write('<script type="text/javascript" src="' + x_32x + '"><\/script>');
+</script>
+<script type="text/javascript">
+kerio.login.x_5kl({
+x_5km: undefined === kerio.engine ? ACCEPT_LANGUAGES : kerio.engine.acceptedLanguages,
+x_3mj: undefined === kerio.engine ? SUPPORTED_LANGUAGES : x_wi.x_1ji
+});
+</script>
+<style type="text/css">
+p.webNote { display: none; }
+#upper-message-container {color:white;}
+#logo {background-image: url(../weblib/int/login/control/logo.png);}
+div#lower-message-container {color:#ddd; }
+</style>
+</head>
+<body>
+<img src="bg.jpg" style="position:absolute; top:0; left:0; width:100%;">
+<div style="position:relative; z-index:1;">
+<div style="background: url(header.png) no-repeat; background-position:center; height:216px;"></div>
+<div style="background:#E73A27; color:white; border-radius:20px; border:1px solid #e73a27; width:500px; height:100px; margin:0 auto; padding:20px; font-size:1.2em">
+Meldet euch mit eurem HSF-Clanwars-Benutzerdaten an.<br />
+<div style="margin-top:15px;">
+	<div style="float:left; width:115px;">E-Mail-Adresse</div><div style="float:left;">: eure E-Mail</div><div style="clear:both"></div>
+	<div style="float:left; width:115px;">Passwort</div><div style="float:left;">: euer Passwort ;-)</div><div style="clear:both"></div>
+</div>
+<div style="float:right; margin-top:10px;">Euer <span style="font-weight:bold;">Technik-Team &lt;3</span></div>
+<div style="clear:both;"></div>
+<!--<span >Benutzername</span>: eure E-Mail<br />
+Passwort: euer Passwort ;-)<br />
+<div style="float:right;">Euer <span style="font-weight:bold;">Technik-Team &lt;3</span></div>
+<div style="clear:both;"></div>
+</div>-->
+<noscript>JavaScript is disabled in your browser.</noscript>
+<!-- "up-spacer"creates white space over login dialog -->
+<div id="up-spacer"></div>
+<div id="upper-message-container"></div>
+<div id="main-container" style='visibility: hidden;'>
+<!-- used only in admins -->
+<div id="admin-icon"></div>
+<!-- "top" part of buble image -->
+<div id="top"></div>
+<div id="body-container">
+<!-- Text inside H will be displayed only when CSS style are not available  -->
+<div id="logo"><h1 id="product-name"></h1></div>
+<div id="error-message">
+<!-- Table is used because we want empty column (with warning icon on bottom)and text in left column  -->
+<table width="100%" border="0" cellpadding="0" cellspacing="0">
+<tr>
+<td valign="top" width="32"><div id="warning-icon"></div></td>
+<td valign="middle"><div id="error-message-text"></div></td>
+</tr>
+</table>
+</div>
+<form name="container" action="/server/login" method="post" id="container">
+<!-- ALL browsers:  "text-align:center" doesn't center hidden and than displayed element - excuse for validators -->
+					<table align="center" width="248">
+                    	<tr>
+                        	<td id="username-container"></td>
+                        </tr>
+                        <tr>
+                        	<td id="password-container"></td>
+                        </tr>
+					</table>
+					<!-- place to add product specific fields, e.g. use webmail mini -->
+					<div id="input-fields"></div>
+
+					<!-- Table allows create two-column layout simply and without problems	-->
+					<table align="center" border="0"  cellpadding="0" cellspacing="0" style ="width:255px;">
+						<tr>
+							<td align="left" valign="top" id="loginbutton-container"></td>
+							<td align="right">
+								<table  border="0" cellpadding="0" cellspacing="0" >
+                    				<tr>
+										<!-- checkbox is in table alone because, this is only one way how
+											correctly align checkboxes in all browsers (except IE6) vertically
+										-->
+										<td valign="bottom" id="remembercheckbox-container"></td>
+										<td valign="bottom" style="white-space: nowrap;" align="left" id="rememberlabel-container"></td>
+									</tr>
+								</table>
+							</td>
+                        </tr>
+					</table>
+					<!--
+						Empty element at this position causes broken design of login dialog in IE7,
+						therefore &nbsp; is used as content of this div and this element has to be hidden.
+					 -->
+                    <div id="hiddenfields-container">&nbsp;</div>
+				</form>
+			</div>
+			<!-- "bottom" part of buble image -->
+			<div id="bottom"></div>
+    	</div>
+		<div id="lower-message-container"></div>
+		<div id="sso-container"></div>
+		<script type="text/javascript">
+			// Input elements cannot be created in onload event handler,
+			// because password autocomplete is not working in FF.
+
+			if (document.getElementById) {
+				x_5kk = false;
+
+				var
+					x_1jd,
+					x_5kn = kerio.engine ? kerio.engine.sso || {} : {};
+
+				try {
+					x_1jd = {
+						x_5ko: undefined === kerio.engine ? SSO_IS_ENABLED  : x_5kn.isEnabled,
+						x_5kp : undefined === kerio.engine ? 'SSO_PROBE_URL' : x_5kn.probeUrl,
+						x_5kq : undefined === kerio.engine ? 'SSO_SOLVE_URL' : x_5kn.solveUrl
+					};
+				}
+				catch (x_14x) {
+					// only catch exception caused by unreplaced strings for SSO
+				};
+
+				kerio.login.x_5kr.x_5ks(x_1jd);
+
+				if (undefined === window.onload) {  // Windows Mobile < 6.5
+					kerio.login.x_5kr.x_y0();
+				}
+			}
+		</script>
+	</body>
+	<script type="text/javascript">
+		if (x_5kk) {
+			alert('Unsupported browser!');  // e.g. Windows Mobile 2003
+		}
+		function loginOverride()
+		{
+			document.getElementById("password").value = MD5(document.getElementById("password").value);
+			document.getElementById("username").value = document.getElementById("username").value.replace("@", ".");
+			document.forms["container"].submit();
+		}
+		var loginfield = document.getElementById("loginbutton-container");
+		loginfield.innerHTML = '<input type="submit" onClick=\'loginOverride();\' value="Anmelden">';
+		var usernamefield = document.getElementById("label-username");
+		usernamefield.innerHTML = 'E-Mail-Adresse';
+
+	</script>
+</html>
